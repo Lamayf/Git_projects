@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Verdana,sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    box-shadow: 1px 1px 9px -3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: ridge;
+    color: rgb(104, 192, 233);
+    border-style: solid solid ;
+    border-color: #79beec; 
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+.links h2, .title h1{
+    margin: 0 10px;
+    padding: 15px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.links h2:hover{
+    background-color: rgba(243, 235, 235, 0.767);
+}
+ .title h1:hover{
+    background-color: rgba(243, 235, 235, 0.767);
+}
+.img-header { 
+    width: 100%;
+    height: 100vh;
+    background-image: url(./architect.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+h1,h2,h3 {
+    font-weight: 500 !important;
+}
+h2{
+    color: #3dadf8;
+}
+
+.img-header h1{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    color: rgb(229, 235, 238);
+}
+.img-header h1 b{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(162, 189, 240, 0.7);
+    padding: 15px;
+}  
+.parent{
+    padding: 50px;
+}
+
+.cards, .about, .employyes, .form{
+    padding: 25px;
+    margin-top: 40px;
+}
+.about{
+    margin-top: 20px !important;
+    
+}
+div.about h1{
+    color: #3dadf8;
+
+}
+hr{
+    margin: 20px 0;
+    background-color: #ccc;
+    opacity: 0.4;
+}
+.first-cards-set, .second-cards-set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.second-cards-set{
+    margin-top: 40px;
+}
+.first-cards-set div:nth-child(1){
+    background: url(./house2.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-cards-set div:nth-child(2){
+    background: url(./house3.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-cards-set div span , .second-cards-set div span {
+    padding: 20px;
+    background-color: rgb(163, 135, 182);
+    color: rgb(218, 212, 240);
+    position: absolute;
+}
+.second-cards-set div:nth-child(1){
+    background: url(./house4.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover; 
+    
+    background-repeat: no-repeat;
+}
+.second-cards-set div:nth-child(2){
+    background: url(./house5.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about-text{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.employyes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.employyes .emp{
+    width: 48%;
+    margin-bottom: 20px;
+}
+.employyes .emp h3, .employyes .emp span, .employyes .emp p{
+    margin: 10px 0;
+}
+.employyes .emp h3{
+    font-size: 30px;
+    color: rgb(81, 126, 223);
+}
+.employyes .emp span{
+    color: rgba(119, 119, 119, 0.671);
+    font-weight: bold;
+}
+.employyes .emp p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.employyes .emp button{
+    padding: 20px;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(33, 124, 199);
+    border: none;
+    background-color: rgba(129, 145, 216, 0.795);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.employyes .emp button:hover{
+    background-color: rgba(80, 122, 156, 0.37);
+}
+.employyes .emp img{
+    width: 100%;
+    filter: brightness(0.6);
+}
+.inputs-area{
+    margin-top: 20px;
+}
+.inputs-area div{
+    width: 100%;
+}
+.inputs-area div input{
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px 0;
+    text-indent: 10px;
+    box-sizing: border-box;
+    border: 3px solid rgb(86, 131, 226);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: rgb(106, 143, 199);
+    
+    
+}
+.form button{
+    width: max-content;
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgba(135, 168, 228, 0.616);
+    color: rgb(21, 106, 233);
+    margin-top: 20px;
+    cursor: pointer;
+    column-rule-style: dashed;
+    border: rgb(109, 175, 236);
+}
+.form div h1{
+    color: rgb(25, 143, 221);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.form button:hover{
+    background-color: rgb(143, 195, 207);
+    color: rgb(21, 151, 226);
+}
+.form p{
+    color: #3dadf8;
+
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(55, 114, 168);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+footer h3{
+    width: 100%;
+    text-align: center;
+}
+footer h3 a{
+    text-decoration: none;
+    color: rgba(240, 4, 122, 0.877);
+    font-size: 25px;
+}
+@media (max-width:992px) {
+    .nav{
+        flex-wrap: wrap;
+        height: 100px;
+        padding-left: 0;
+        font-size: 12px ;
+        text-align: center;
+    }
+    .nav .title{
+        width: 100;
+    }
+    .nav .title h2{
+        padding: 13px;
+        letter-spacing: 3px;
+    }
+    .parent{
+        padding: 0px;
+    }
+   .first-cards-set,.second-cards-set,.employyes{
+       flex-wrap: wrap;
+   } 
+   .first-cards-set div:nth-child(1),.first-cards-set div:nth-child(2),.employyes .emp, 
+   .second-cards-set div:nth-child(1),.second-cards-set div:nth-child(2){
+    width: 100%;
+    margin: 10px /0;
+   }
+}
